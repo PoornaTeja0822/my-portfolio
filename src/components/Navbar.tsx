@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
             Contact
           </a>
 
-          {/* Resume Button */}
+          {/* Professional Resume Button */}
           <a
             href="/resume.pdf"
             target="_blank"
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             Resume
           </a>
 
-          {/* Dark Mode Toggle */}
+          {/* Dark Mode Toggle Button */}
           <button
             onClick={toggleDarkMode}
             className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -115,7 +115,7 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Dropdown */}
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-4 animate-slideDown">
           <div className="flex flex-col items-center space-y-4">
@@ -148,17 +148,15 @@ const Navbar: React.FC = () => {
               Contact
             </a>
 
-            {/* Resume Button */}
             <a
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition-all duration-300"
+              className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
             >
               Resume
             </a>
 
-            {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
