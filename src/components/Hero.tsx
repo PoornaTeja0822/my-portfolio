@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
 
           {/* Main CTA Button */}
           <a
-            href="#contact"
+            href="#projects"
             className="inline-block px-8 py-3 bg-blue-600 text-white font-medium rounded-full shadow-md hover:shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:-translate-y-1"
           >
             View My Work
@@ -32,14 +32,13 @@ const Hero: React.FC = () => {
           <div className="mt-8 flex justify-center space-x-6">
             {/* GitHub */}
             <a
-              href="https://github.com/your-github-username"
-              target="_blank"
+              href="https://github.com/PoornaTeja0822"
               rel="noopener noreferrer"
               title="GitHub"
               className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300"
             >
               <img
-                src="https://www.pngmart.com/files/23/Github-Logo-PNG.png"
+                src="github.png"
                 alt="GitHub"
                 className="w-12 h-12 rounded-full shadow-lg"
               />
@@ -47,7 +46,7 @@ const Hero: React.FC = () => {
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/your-linkedin-username"
+              href="https://linkedin.com/in/poorna-teja-p-2808b5294"
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
@@ -62,12 +61,12 @@ const Hero: React.FC = () => {
 
             {/* Email */}
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:your-princepoorna05@gmail.com"
               title="Email"
               className="transform hover:scale-110 hover:-translate-y-1 transition-all duration-300"
             >
               <img
-                src="https://ouch-cdn2.icons8.com/Q_mKQhLvgHc4CpJslA6YAg1orkPp2LG3W6rdaEQZ1oo/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTYv/MzE3NWFhMzAtMmQw/Yi00MDgyLTlhZWMt/ZWUyZGNlYzQwYmM0/LnBuZw.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
                 alt="Email"
                 className="w-12 h-12 rounded-full shadow-lg"
               />

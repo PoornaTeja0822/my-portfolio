@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Github, Linkedin, Phone } from "lucide-react";
+import { Mail, Github, Linkedin, Phone, } from "lucide-react";
 
 const Contact: React.FC = () => {
   return (
@@ -21,8 +21,14 @@ const Contact: React.FC = () => {
 
         {/* Contact Cards */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          
           {/* GitHub */}
-          <div className="w-72 bg-gray-200 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+          <a
+            href="https://github.com/PoornaTeja0822"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-72 bg-gray-200 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 block"
+          >
             <Github className="w-8 h-8 mx-auto mb-3 text-blue-600 dark:text-blue-400" />
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-1">
               GitHub
@@ -30,10 +36,15 @@ const Contact: React.FC = () => {
             <p className="text-gray-700 dark:text-gray-300">
               github.com/Poorna-Teja
             </p>
-          </div>
+          </a>
 
           {/* LinkedIn */}
-          <div className="w-72 bg-gray-200 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+          <a
+            href="https://linkedin.com/in/poorna-teja-p-2808b5294"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-72 bg-gray-200 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 block"
+          >
             <Linkedin className="w-8 h-8 mx-auto mb-3 text-blue-600 dark:text-blue-400" />
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-1">
               LinkedIn
@@ -41,10 +52,13 @@ const Contact: React.FC = () => {
             <p className="text-gray-700 dark:text-gray-300">
               linkedin.com/in/poorna-teja
             </p>
-          </div>
+          </a>
 
           {/* Email */}
-          <div className="w-72 bg-gray-200 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+          <a
+            href="mailto:princepoorna05@gmail.com"
+            className="w-72 bg-gray-200 dark:bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 block"
+          >
             <Mail className="w-8 h-8 mx-auto mb-3 text-blue-600 dark:text-blue-400" />
             <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-1">
               Email
@@ -52,14 +66,17 @@ const Contact: React.FC = () => {
             <p className="text-gray-700 dark:text-gray-300">
               princepoorna05@gmail.com
             </p>
-          </div>
+          </a>
         </div>
 
         {/* Phone Number */}
-        <div className="flex items-center justify-center mt-12 text-gray-800 dark:text-gray-200">
-          <Phone className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-          <span className="text-lg font-medium">+91 9047143338</span>
-        </div>
+       <div className="flex items-center justify-center mt-12 text-gray-800 dark:text-gray-200">
+  <a href="tel:+919047143338" className="flex items-center">
+    <Phone className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400 cursor-pointer" />
+    <span className="text-lg font-medium cursor-pointer">+91 9047143338</span>
+  </a>
+</div>
+
       </div>
     </section>
   );

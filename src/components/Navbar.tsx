@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
 
           {/* Professional Resume Button */}
           <a
-            href="/resume.pdf"
+            href="resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+              className="px-4 py-2 bg-blue-200 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
             >
               Resume
             </a>
