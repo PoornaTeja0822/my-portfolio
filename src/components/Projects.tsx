@@ -9,11 +9,11 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Personal Portfolio Website",
+    title: "REST Countries Explorer",
     description:
-      "Developed a responsive personal portfolio using React, TypeScript, and Tailwind CSS. Showcases my projects, skills, and certifications with smooth UI transitions and dark mode support.",
-    techStack: ["React", "TypeScript", "Tailwind CSS"],
-    link: "#",
+      "1. Built a responsive country explorer web application with dynamic routing and reusable React components. 2.Implemented dark/light mode UI using Tailwind CSS custom themes. 3. Added error boundaries, loading spinners, and page fallback handling for better UX. 4. Organized scalable frontend architecture with modular layouts and optimized rendering.",
+    techStack: ["React.js", "React Router", "JavaScript", "Tailwind CSS"],
+    link: "https://rest-countries-xi-ashen.vercel.app/",
   },
   {
     title: "Employee Management System",

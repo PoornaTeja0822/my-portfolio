@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           <img
             src="profile.jpg"
             alt="Poorna Teja"
-            className="w-10 h-10 rounded-full object-cover border border-gray-300"
+            className="w-12 h-12 rounded-full object-cover border border-gray-300"
           />
           <div className="flex flex-col leading-tight">
             <span className="text-xl font-bold text-gray-900 dark:text-white">
