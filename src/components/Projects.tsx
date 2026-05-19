@@ -10,37 +10,41 @@ type Project = {
 const projects: Project[] = [
   {
     title: "REST Countries Explorer",
-    description:
-      "1. Built a responsive country explorer web application with dynamic routing and reusable React components."+
-      "2. Implemented dark/light mode UI using Tailwind CSS custom themes." +
-      "3. Added error boundaries, loading spinners, and page fallback handling for better UX." +
-      "4. Organized scalable frontend architecture with modular layouts and optimized rendering.",
+    description: `
+1. Built a responsive country explorer web application with dynamic routing and reusable components.
+
+2. Implemented dark/light mode UI using Tailwind CSS custom themes.
+
+3. Added error boundaries, loading spinners, and page fallback handling for better UX.
+
+4. Organized scalable frontend architecture with modular layouts and optimized rendering.
+`,
     techStack: ["React.js", "React Router", "JavaScript", "Tailwind CSS"],
     link: "https://rest-countries-xi-ashen.vercel.app/",
   },
   {
     title: "Chemical Today Magazine",
     description:
-      "1. Developed a responsive React + TypeScript web application for Chemical Today, featuring dynamic news cards, dashboards,and interactive UI components." +
-      "2. Implemented optimized API integration and data-driven rendering to display real-time chemical industry news, insights, and analytics.Implemented the system to streamline curfew e-pass issuance and management."+
-      "3. Built reusable components (Post Cards, Sections, Layouts) with clean UI/UX, Tailwind CSS, and modular architecture, improving performance and maintainability" ,
+      `1. Developed a responsive React + TypeScript web application for Chemical Today, featuring dynamic news cards, dashboards,and interactive UI components.` +
+      `2. Implemented optimized API integration and data-driven rendering to display real-time chemical industry news, insights, and analytics.Implemented the system to streamline curfew e-pass issuance and management.`+
+      `3. Built reusable components (Post Cards, Sections, Layouts) with clean UI/UX, Tailwind CSS, and modular architecture, improving performance and maintainability` ,
     techStack: ["React.tsx", "React.js", "Python","Tailwind CSS", "MongoDB"],
     link: "https://chemical-today-eight.vercel.app/",
   },
     {
     title: "To-Do Full Stack Application",
     description:
-      "1. Created an admin dashboard for managing products, users, and sales data." +
-      "2. Focused on real-time analytics and user-friendly visualizations.",
+      '1. Created an admin dashboard for managing products, users, and sales data.' +
+      '2. Focused on real-time analytics and user-friendly visualizations.',
     techStack: ["React", "Node.js", "SQL Server"],
     link: "https://todo-fullstack-amae.vercel.app/Login",
   },
    {
     title: "Todoist [Task & Project Management Web Application]",
     description:
-      "1. Built a responsive task and project management application using React.js and Context API." +
-      "2. Integrated API-based project/task handling with loading and error management."+
-      "3. Designed a modern UI with reusable components using Tailwind CSS and Ant Design." ,
+      '1. Built a responsive task and project management application using React.js and Context API.' +
+      '2. Integrated API-based project/task handling with loading and error management.'+
+      '3. Designed a modern UI with reusable components using Tailwind CSS and Ant Design.' ,
     techStack: ["React.js", "Context API", "Tailwind CSS", "Ant Design"],
     link: "#",
   },
