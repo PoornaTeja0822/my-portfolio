@@ -11,40 +11,43 @@ const projects: Project[] = [
   {
     title: "REST Countries Explorer",
     description: `
-1. Built a responsive country explorer web application with dynamic routing and reusable components.
-
-2. Implemented dark/light mode UI using Tailwind CSS custom themes.
-
-3. Added error boundaries, loading spinners, and page fallback handling for better UX.
-
-4. Organized scalable frontend architecture with modular layouts and optimized rendering.
+      1. Built a responsive country explorer web application with dynamic routing and reusable components.
+      2. Implemented dark/light mode UI using Tailwind CSS custom themes.
+      3. Added error boundaries, loading spinners, and page fallback handling for better UX.
+      4. Organized scalable frontend architecture with modular layouts and optimized rendering.
 `,
     techStack: ["React.js", "React Router", "JavaScript", "Tailwind CSS"],
     link: "https://rest-countries-xi-ashen.vercel.app/",
   },
   {
     title: "Chemical Today Magazine",
-    description:
-      `1. Developed a responsive React + TypeScript web application for Chemical Today, featuring dynamic news cards, dashboards,and interactive UI components.` +
-      `2. Implemented optimized API integration and data-driven rendering to display real-time chemical industry news, insights, and analytics.Implemented the system to streamline curfew e-pass issuance and management.`+
-      `3. Built reusable components (Post Cards, Sections, Layouts) with clean UI/UX, Tailwind CSS, and modular architecture, improving performance and maintainability` ,
+    description:`
+      1. Developed a responsive React + TypeScript web application for Chemical Today, featuring dynamic news cards, dashboards,and interactive UI components. 
+      2. Implemented optimized API integration and data-driven rendering to display real-time chemical industry news, insights and analytics.
+      3. Built reusable components (Post Cards, Sections, Layouts) with clean UI/UX, Tailwind CSS, and modular architecture, improving performance and maintainability.
+      ` ,
     techStack: ["React.tsx", "React.js", "Python","Tailwind CSS", "MongoDB"],
     link: "https://chemical-today-eight.vercel.app/",
   },
     {
     title: "To-Do Full Stack Application",
-    description:
-      '1. Created an admin dashboard for managing products, users, and sales data.' +
-      '2. Focused on real-time analytics and user-friendly visualizations.',
+    description:`
+      1. Created an admin dashboard for managing products, users, and sales data.
+      2. Focused on real-time analytics and user-friendly visualizations.
+      3. Implemented secure authentication and role-based access control for admin and users.
+      4. Developed RESTful APIs for seamless frontend-backend integration and efficient database operations.
+      ` ,
     techStack: ["React", "Node.js", "SQL Server"],
     link: "https://todo-fullstack-amae.vercel.app/Login",
   },
    {
     title: "Todoist [Task & Project Management Web Application]",
-    description:
-      '1. Built a responsive task and project management application using React.js and Context API.' +
-      '2. Integrated API-based project/task handling with loading and error management.'+
-      '3. Designed a modern UI with reusable components using Tailwind CSS and Ant Design.' ,
+    description:`
+      1. Built a responsive task and project management application using React.js and Context API.
+      2. Integrated API-based project/task handling with loading and error management.
+      3. Designed a modern UI with reusable components using Tailwind CSS and Ant Design.
+      `
+    ,
     techStack: ["React.js", "Context API", "Tailwind CSS", "Ant Design"],
     link: "#",
   },
@@ -72,16 +75,16 @@ const Projects: React.FC = () => {
               <h3 className="text-2xl font-semibold mb-3 text-gray-800 dark:text-gray-100">
                 {p.title}
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+              <p className="text-lg whitespace-pre-line text-gray-700  dark:text-gray-300 mb-4 leading-relaxed">
                 {p.description}
               </p>
-              <div className="text-sm mb-4 text-gray-600 dark:text-gray-400">
+              <div className="text-m mb-4 text-gray-600 dark:text-gray-400">
                 <strong>Tech Stack:</strong> {p.techStack.join(", ")}
               </div>
               {p.link && (
                 <a
                   href={p.link}
-                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                  className="text-lg text-blue-600 dark:text-blue-400 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

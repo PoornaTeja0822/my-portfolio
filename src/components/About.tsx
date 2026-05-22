@@ -16,13 +16,13 @@ const About: React.FC = () => {
   <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 max-w-7xl w-full transform transition-transform duration-500 hover:-translate-y-2 hover:shadow-2xl">
     <div className="text-lg text-gray-700 dark:text-gray-300 space-y-4 text-center md:text-left">
       <p>
-        I’m Poorna Teja P, a passionate Software Developer currently working at Deloai Pvt Ltd. I specialize in building scalable and efficient software solutions using technologies like React.js, .NET, and SQL Server.
+        I am Poorna Teja P, a passionate Software Developer currently working at Deloai Pvt Ltd. I specialize in building scalable and efficient software solutions using technologies like React.js, Typescript, and SQL Server.
       
       
         As a dedicated developer, I enjoy designing clean, maintainable code and solving complex problems through modern technology. My focus is on delivering user-friendly, reliable, and high-quality web applications.
       
       
-        I’m always eager to explore new tools and frameworks, improve my skills, and collaborate on projects that make a real impact.
+        I am always eager to explore new tools and frameworks, improve my skills, and collaborate on projects that make a real impact.
       </p>
     </div>
   </div>
@@ -37,23 +37,27 @@ const About: React.FC = () => {
     <div className="text-lg text-gray-700 dark:text-gray-300 space-y-6 text-center md:text-left">
       {/* Degree 1 */}
       <div>
-        <h3 className="font-semibold text-xl mb-1">Bachelor of Computer Applications</h3>
+        <h3 className="font-semibold text-xl mb-1">Master of Computer Applications</h3>
         <p className="italic">
-          The Oxford College of Science, Bangalore University, Bangalore | 2020 - 2023
+          Jain  University, Bangalore | 2023 - 2025
         </p>
-        <p>Graduated with 7.3 CGPA</p>
+        <p>Graduated with 9.1/10 CGPA</p>
         <p>
-          Focused on software development, databases, and web technologies. Completed multiple
-          projects in React.js, Python, and SQL Server.
-        </p>
+         Passionate Full Stack Developer experienced in building responsive and efficient applications using modern web technologies like React.js, TypeScript, .NET, and SQL Server.
+         </p>
+        
       </div>
 
       {/* Degree 2 */}
       <div>
-        <h3 className="font-semibold text-xl mb-1">Senior Secondary Education</h3>
-        <p className="italic">Narayana Junior College | 2018 - 2020</p>
-        <p>Completed with 8.8 CGPA</p>
-        <p>Specialized in Biology, Physics, and Chemistry.</p>
+        <h3 className="font-semibold text-xl mb-1">Bachelor of Computer Applications</h3>
+        <p className="italic">
+          The Oxford College of Science, Bangalore University, Bangalore | 2020 - 2023
+        </p>
+        <p>Graduated with 7.3/10 CGPA</p>
+        <p>
+          Focused on software development, databases, and web technologies. Completed multiple projects in React.js, Python, and SQL Server.
+        </p>
       </div>
     </div>
   </div>
@@ -67,11 +71,37 @@ const About: React.FC = () => {
 <div className="flex justify-center">
   <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 max-w-7xl w-full transform transition-transform duration-500 hover:-translate-y-2 hover:shadow-2xl">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
-         {/* Frontend */}
+         {/* Programming Languages */}
       <div>
-        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Frontend</h3>
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          Programming Languages
+        </h3>
+
         <div className="flex flex-wrap justify-center md:justify-start gap-2">
-          {["React", "TypeScript",  "HTML5", "CSS3", "JavaScript", "Tailwind CSS"].map(skill => (
+          {["Python", "JavaScript", "TypeScript"].map((skill: string) => (
+            <span
+              key={skill}
+              className="px-3 py-1 border rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 shadow-sm"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+        {/* Frontend Technologies */}
+      <div>
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          Frontend Technologies
+        </h3>
+
+        <div className="flex flex-wrap justify-center md:justify-start gap-2">
+          {[
+            "React.js",
+            "HTML5",
+            "CSS3",
+            "Tailwind CSS",
+            "Responsive Web Design",
+          ].map((skill: string) => (
             <span
               key={skill}
               className="px-3 py-1 border rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 shadow-sm"
@@ -82,11 +112,19 @@ const About: React.FC = () => {
         </div>
       </div>
 
-      {/* Database Management */}
+      {/* Backend & API Development */}
       <div>
-        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Database Management</h3>
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          Backend & API Development
+        </h3>
+
         <div className="flex flex-wrap justify-center md:justify-start gap-2">
-          {["SQL Server", "Oracle SQL", "MongoDB"].map(skill => (
+          {[
+            "Node.js",
+            "Express.js",
+            "RESTful APIs",
+            "JWT Authentication",
+          ].map((skill: string) => (
             <span
               key={skill}
               className="px-3 py-1 border rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 shadow-sm"
@@ -96,11 +134,39 @@ const About: React.FC = () => {
           ))}
         </div>
       </div>
-       {/* Backend */}
+
+      {/* Databases */}
       <div>
-        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Backend</h3>
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          Databases
+        </h3>
+
         <div className="flex flex-wrap justify-center md:justify-start gap-2">
-          {[ "Python", "Flask", ].map(skill => (
+          {[
+            "MySQL",
+            "MongoDB",
+            "SQLite",
+            "SQL Server",
+            "Oracle SQL",
+          ].map((skill: string) => (
+            <span
+              key={skill}
+              className="px-3 py-1 border rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 shadow-sm"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Version Control */}
+      <div>
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          Version Control
+        </h3>
+
+        <div className="flex flex-wrap justify-center md:justify-start gap-2">
+          {["Git", "GitHub", "GitLab"].map((skill: string) => (
             <span
               key={skill}
               className="px-3 py-1 border rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 shadow-sm"
@@ -113,9 +179,17 @@ const About: React.FC = () => {
 
       {/* Tools & Platforms */}
       <div>
-        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Tools & Platforms</h3>
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          Tools & Platforms
+        </h3>
+
         <div className="flex flex-wrap justify-center md:justify-start gap-2">
-          {["Visual Studio 2022", "VS Code", "SQL Server", "Git", "GitHub", "Postman"].map(skill => (
+          {[
+            "VS Code",
+            "Eclipse",
+            "Postman",
+            "Linux Shell Commands",
+          ].map((skill: string) => (
             <span
               key={skill}
               className="px-3 py-1 border rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 shadow-sm"
@@ -125,6 +199,25 @@ const About: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* Operating Systems */}
+      <div>
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">
+          Operating Systems
+        </h3>
+
+        <div className="flex flex-wrap justify-center md:justify-start gap-2">
+          {["Linux", "Windows"].map((skill: string) => (
+            <span
+              key={skill}
+              className="px-3 py-1 border rounded-lg text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-900 shadow-sm"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
